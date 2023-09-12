@@ -12,8 +12,8 @@ char alphabets[52]={'A','B','C','D','E','F','G','H','I','J','K','L',
 char puncsAndDigits[]={
 	'0','1','2','3','4','5','6','7','8','9', ':' , '?' , '!' , '@' ,'#' , '$' , '%' ,
 	'^' , '&' , '*' , '(' , ')' , '[' , ']' , '{' , '}' , '>' , '<' , '~' , '+' , '-' , '_' ,
-	 '=' , '.', ',' , '/' , '\"','\\',char(39)}; /* 
-	 									 ^
+	 '=' , '.', ',' , '/' , '\"','\\',char(39),'|'}; /* 
+	 				     ^
 	 char 39 is the single quotation mark ( ' ), I used this to avoid escape sequence errors during iterations.*/
 
 
@@ -26,7 +26,7 @@ bool isAlphabet(char a){
 }
 
 bool isPuncOrDigit(char a){
-    for(int i=0;i<39;i++){
+    for(int i=0;i<40;i++){
         if(a==puncsAndDigits[i])return 1;
     }
     return 0;
