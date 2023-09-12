@@ -13,8 +13,8 @@ char puncsAndDigits[]={
 	'0','1','2','3','4','5','6','7','8','9', ':' , '?' , '!' , '@' ,'#' , '$' , '%' ,
 	'^' , '&' , '*' , '(' , ')' , '[' , ']' , '{' , '}' , '>' , '<' , '~' , '+' , '-' , '_' ,
 	 '=' , '.', ',' , '/' , '\"','\\',char(39),'|'}; /* 
-	 				     ^
-	 char 39 is the single quotation mark ( ' ), I used this to avoid escape sequence errors during iterations.*/
+	 				     ^	
+char 39 is the single quotation mark ( ' ), I used this to avoid escape sequence errors during iterations.*/
 
 
 bool isAlphabet(char a){
